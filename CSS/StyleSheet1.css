@@ -1,10 +1,14 @@
-﻿body { background-color: tan;
+﻿
+
+/* Custom formatting for all pages*/
+
+body { background-color: tan;
 }
 
 #wrap {
     background: white;
     width: 1200px;
-    height: 800px;
+    height: auto;
     margin: auto;
     padding-top: 20px;
     text-align: left;
@@ -29,4 +33,46 @@ h2 { color: coral; text-align: center; font-family:'Adobe Fan Heiti Std'; font-s
 }
 
 #contact { text-align: center;
+}
+
+p { text-align: center; padding-left: 150pt; padding-right: 150pt;
+}
+
+ /* GridView Recipes.aspx*/
+
+.grid-view {
+    background-color: lightgoldenrodyellow;
+    width: auto;
+    margin: 5px 0 10px 0;
+    border: solid 2px coral;
+    border-collapse: collapse;
+    text-align: center;
+    color: black;
+}
+
+
+.grid-view .row { background-color: white;
+    }
+
+.grid-view .alternate { background-color: coral;
+    }
+
+    .grid-view td {
+        padding: 10px;
+        border: solid 2px coral;
+        color: black;
+    }
+
+    .grid-view th {
+        padding: 10px;
+        color: lightgoldenrodyellow;
+        border-left: solid 2px coral;
+    }
+   
+    /*End grid-view style*/
+
+    /* Start detail-view style recipedetails.aspx*/
+
+
+
 }

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
     <title> About Us </title>
 
     <link rel="stylesheet" type="text/css" href="./css/StyleSheet1.css" />
@@ -40,6 +40,8 @@
          <br />
 
          <div id="footer"> &copy;  Wicked Easy Recipes 2014. </div>
+
+         <br />
     
          </div>
     
