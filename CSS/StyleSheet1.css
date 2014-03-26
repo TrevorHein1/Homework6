@@ -67,12 +67,18 @@ p { text-align: center; padding-left: 150pt; padding-right: 150pt;
         padding: 10px;
         color: lightgoldenrodyellow;
         border-left: solid 2px coral;
-    }
+ }
+
+    #GridView1 { margin-right:auto;
+    margin-left:auto;
+}
+
+#DetailsView1 {
+    margin-left: auto;
+    margin-right: auto;
+}
    
     /*End grid-view style*/
 
     /* Start detail-view style recipedetails.aspx*/
 
-
-
-}
