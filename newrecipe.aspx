@@ -4,12 +4,20 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title> Add New Recipe </title>
+
+    <link rel="stylesheet" type="text/css" href="./css/StyleSheet1.css" />
+
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
     
+        <div id="wrap">
+
+        <h1> Wicked Easy Recipes </h1>
+        <h2> Add a New Recipe </h2>
+        
+
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cs_Recipes %>" DeleteCommand="DELETE FROM [Table] WHERE [reID] = @reID" InsertCommand="INSERT INTO [Table] ([reName], [reSubmit], [reIngrdient1], [reIngredient2], [reIngredient3], [reIngredient4], [reIngredient5], [rePreperation], [reNotes]) VALUES (@reName, @reSubmit, @reIngrdient1, @reIngredient2, @reIngredient3, @reIngredient4, @reIngredient5, @rePreperation, @reNotes)" SelectCommand="SELECT * FROM [Table] WHERE ([reID] = @reID)" UpdateCommand="UPDATE [Table] SET [reName] = @reName, [reSubmit] = @reSubmit, [reIngrdient1] = @reIngrdient1, [reIngredient2] = @reIngredient2, [reIngredient3] = @reIngredient3, [reIngredient4] = @reIngredient4, [reIngredient5] = @reIngredient5, [rePreperation] = @rePreperation, [reNotes] = @reNotes WHERE [reID] = @reID">
             <DeleteParameters>
                 <asp:Parameter Name="reID" Type="Int32" />
@@ -41,6 +49,18 @@
                 <asp:Parameter Name="reID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
+      
+        <div id="links">
+
+        <a href="default.aspx"> Home </a>
+        &nbsp;<a href="Recipes.aspx"> View Recipes </a>
+        &nbsp;<a href="newrecipe.aspx">Add Recipe </a>
+        &nbsp;<a href="aboutus.aspx">About Us </a>
+        &nbsp;<a href="contact.aspx"> Contact </a>
+
+        </div>
+
+        <br />
         <br />
         <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="reID" DataSourceID="SqlDataSource1" Height="50px" Width="292px" DefaultMode="Insert">
             <Fields>
@@ -56,8 +76,14 @@
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
             </Fields>
         </asp:DetailsView>
+
+        <br />
+        <br />
+
+        <div id="footer"> &copy;  Wicked Easy Recipes 2014. </div>
     
-    </div>
+        </div>
+    
     </form>
 </body>
 </html>

@@ -1,0 +1,32 @@
+﻿body { background-color: tan;
+}
+
+#wrap {
+    background: white;
+    width: 1200px;
+    height: 800px;
+    margin: auto;
+    padding-top: 20px;
+    text-align: left;
+    border-left: solid 10px coral;
+    border-right: solid 10px coral;
+    border-top: solid 10px coral;
+    border-bottom: solid 10px coral;
+}
+
+h1 { color: coral; font-family: 'Adobe Fan Heiti Std'; text-align: center; font-size: 32pt;
+}
+
+h2 { color: coral; text-align: center; font-family:'Adobe Fan Heiti Std'; font-size: 20pt;
+}
+
+#links {text-align: center; background-color: coral; font-family: arial; font-size: 14pt; }
+
+#image {text-align:center;
+}
+
+#footer { text-align: center; color: coral;
+}
+
+#contact { text-align: center;
+}
