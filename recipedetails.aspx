@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
     <title> View Recipe Details </title>
 
     <link rel="stylesheet" type="text/css" href="./css/deleterecord.css" />
@@ -64,7 +64,7 @@
         <br />
         <br />
 
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="reID" DataSourceID="SqlDataSource1" Height="50px" Width="292px">
+        <asp:DetailsView ID="DetailsView1" runat="server" CssClass="grid-view" AutoGenerateRows="False" DataKeyNames="reID" DataSourceID="SqlDataSource1" Height="50px" Width="292px">
             <Fields>
                 <asp:BoundField DataField="reName" HeaderText="Recipe Name" SortExpression="reName" />
                 <asp:BoundField DataField="reSubmit" HeaderText="Submitted By" SortExpression="reSubmit" />
@@ -84,6 +84,7 @@
 
         <div id="footer"> &copy;  Wicked Easy Recipes 2014. </div>
 
+            <br />
         
         </div>
  

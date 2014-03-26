@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
     <title> Wicked Easy Recipes </title>
 
     <link rel="stylesheet" type="text/css" href="./css/StyleSheet1.css" />
@@ -59,18 +59,21 @@
         <br />
         <br />
 
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="reID" DataSourceID="RecipeDataSource" Width="440px">
+        
+        <asp:GridView ID="GridView1" runat="server" CssClass="grid-view" RowStyle-CssClass="row" AlternatingRowStyle-CssClass="alternate" AllowPaging ="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="reID" DataSourceID="RecipeDataSource" Width="440px">
             <Columns>
                 <asp:BoundField DataField="reName" HeaderText="Recipe Name" SortExpression="reName" />
                 <asp:BoundField DataField="reSubmit" HeaderText="Submitted By" SortExpression="reSubmit" />
                 <asp:HyperLinkField DataNavigateUrlFields="reID" DataNavigateUrlFormatString="recipedetails.aspx?reID={0}" Text="View Recipe" />
             </Columns>
         </asp:GridView>
-
+            
         <br />
         <br />
 
         <div id="footer"> &copy;  Wicked Easy Recipes 2014. </div>
+
+            <br />
 
         </div>
 
